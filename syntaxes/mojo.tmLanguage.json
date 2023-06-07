@@ -1,0 +1,33 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Mojo",
+	"scopeName": "source.mojo",
+	"patterns": [
+		{
+			"name": "keyword.control",
+			"match": "\\b(let|var|def|fn|struct)\\b"
+		},
+		{
+			"name": "variable.other",
+			"match": "\\b[a-zA-Z_][a-zA-Z0-9_]*\\b"
+		},
+		{
+			"name": "constant.numeric",
+			"match": "\\b[0-9]+\\b"
+		},
+		{
+			"name": "keyword.operator",
+			"match": "\\+|-|\\*|/|<|>|==|!="
+		},
+		{
+			"name": "string.quoted",
+			"begin": "\"",
+			"end": "\""
+		},
+		{
+			"name": "comment.line",
+			"begin": "//",
+			"end": "$"
+		}
+	]
+}

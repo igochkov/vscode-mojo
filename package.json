@@ -1,0 +1,25 @@
+{
+  "name": "mojo",
+  "displayName": "Mojo🔥",
+  "description": "",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.78.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "mojo",
+      "aliases": ["Mojo", "mojo"],
+      "extensions": [".mojo", ".🔥"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "mojo",
+      "scopeName": "source.mojo",
+      "path": "./syntaxes/mojo.tmLanguage.json"
+    }]
+  }
+}
