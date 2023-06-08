@@ -4,22 +4,13 @@ All notable changes to the "Mojo Language Support" Visual Studio Code extension 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased]
+## [0.1.0]
 
 ### Added
-- Initial support for Mojo language syntax highlighting.
-- Basic IntelliSense support for Mojo language keywords.
-- Added `let`, `var`, `def`, `fn`, and `struct` keywords to TextMate grammar.
-- Added support for numeric constants and basic operators to TextMate grammar.
-- Support for line comments (`//`).
-- Basic bracket matching and auto-closing pairs for `{}`, `[]`, and `()`.
-
-### Changed
-
-### Deprecated
-
-### Removed
-
-### Fixed
-
-### Security
+- Python syntax highlighting as a baseline for the Mojo syntax (Mojo is a supperset of Python).
+- Bracket matching
+- Bracket autoclosing
+- Bracket autosurrounding
+- Comment toggling
+- Auto indentation
+- Folding
