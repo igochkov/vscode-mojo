@@ -1,25 +1,41 @@
 {
   "name": "mojo",
   "displayName": "Mojo🔥",
-  "description": "",
-  "version": "0.0.1",
+  "description": "This extension provides rich language support for the Mojo programming language in Visual Studio Code. Mojo is an innovative language that brings together the elegance of Python syntax with the power of systems programming and metaprogramming. With this extension, you can write portable code that's faster than C and seamlessly interoperate with the Python ecosystem. Whether you're coding in static or dynamic style, Mojo and this extension have you covered. Enjoy features like syntax highlighting, code navigation, snippets, and more, making your Mojo development in VS Code a breeze. Embrace the future of programming with Mojo.",
+  "version": "1.0.0",
+  "publisher": "ivaylo.gochkov",
+  "license": "MIT",
   "engines": {
-    "vscode": "^1.78.0"
+    "vscode": "*"
   },
   "categories": [
     "Programming Languages"
   ],
   "contributes": {
-    "languages": [{
-      "id": "mojo",
-      "aliases": ["Mojo", "mojo"],
-      "extensions": [".mojo", ".🔥"],
-      "configuration": "./language-configuration.json"
-    }],
-    "grammars": [{
-      "language": "mojo",
-      "scopeName": "source.mojo",
-      "path": "./syntaxes/mojo.tmLanguage.json"
-    }]
+    "languages": [
+      {
+        "id": "mojo",
+        "aliases": [
+          "Mojo",
+          "mojo"
+        ],
+        "extensions": [
+          ".mojo",
+          ".🔥"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "mojo",
+        "scopeName": "source.mojo",
+        "path": "./syntaxes/mojo.tmLanguage.json"
+      },
+      {
+        "scopeName": "source.python",
+        "path": "./syntaxes/MagicPython.tmLanguage.json"
+      }
+    ]
   }
 }
