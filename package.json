@@ -30,7 +30,7 @@
       {
         "language": "mojo",
         "scopeName": "source.mojo",
-        "path": "./syntaxes/mojo.tmLanguage.json"
+        "path": "./syntaxes/Mojo.tmLanguage.json"
       },
       {
         "scopeName": "source.python",

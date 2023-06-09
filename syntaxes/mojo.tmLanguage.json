@@ -1,12 +1,91 @@
 {
-	"name": "Mojo",
-	"scopeName": "source.mojo",
-	"patterns": [
-		{
-			"include": "source.python"
-		}
-	],
-	"repository": {		
-
-	}
+  "name": "Mojo",
+  "scopeName": "source.mojo",
+  "patterns": [
+    {
+      "include": "#let-and-var-declarations"
+    },
+    {
+      "include": "#struct-types"
+    },
+    {
+      "include": "#Int-type"
+    },
+    {
+      "include": "#fn-definition"
+    },
+    {
+      "include": "source.python"
+    }
+  ],
+  "repository": {
+    "let-and-var-declarations": {
+      "match": "\\b(let|var)\\b",
+      "name": "variable.language.mojo"
+    },
+    "struct-types": {
+      "patterns": [
+        {
+          "name": "storage.type.struct.mojo",
+          "begin": "(?x) \\s*(struct)\\s+ (?= [[:alpha:]_]\\w* \\s* (:|\\())",
+          "end": "(:)",
+          "beginCaptures": {
+            "1": {
+              "name": "storage.type.struct.mojo"
+            }
+          },
+          "endCaptures": {
+            "1": {
+              "name": "punctuation.section.struct.end.mojo"
+            }
+          },
+          "patterns": [
+            {
+              "include": "source.python#class-name"
+            },
+            {
+              "include": "source.python#class-inheritance"
+            }
+          ]
+        }
+      ]
+    },
+    "Int-type": {
+      "match": "\\b(Int)\\b",
+      "name": "storage.type.mojo"
+    },
+    "fn-definition": {
+      "patterns": [
+        {
+          "name": "storage.type.function.mojo",
+          "begin": "(?x) \\s* \\b(fn)\\s+ (?=[[:alpha:]_][[:word:]]* \\s* \\()",
+          "end": "(:|(?=[#'\\\"\\\\n]))",
+          "beginCaptures": {
+            "1": {
+              "name": "storage.type.function.mojo"
+            }
+          },
+          "endCaptures": {
+            "1": {
+              "name": "punctuation.section.function.end.mojo"
+            }
+          },
+          "patterns": [
+            {
+              "include": "source.python#function-def-name"
+            },
+            {
+              "include": "source.python#parameters"
+            },
+            {
+              "include": "source.python#line-continuation"
+            },
+            {
+              "include": "source.python#return-annotation"
+            }
+          ]
+        }
+      ]
+    }
+  }
 }
