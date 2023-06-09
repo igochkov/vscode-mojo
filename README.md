@@ -2,7 +2,7 @@
 
 A [Visual Studio Code](https://code.visualstudio.com/) extension with support for the [Mojo language](https://www.modular.com/mojo)!
 
-## Roadmap
+## Features
 
 ### [Declarative language features](https://code.visualstudio.com/api/language-extensions/overview#declarative-language-features)
 
