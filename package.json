@@ -5,33 +5,33 @@
   "version": "0.1.0",
   "publisher": "igochkov",
   "author": {
-      "name": "Ivaylo Gochkov",
-      "url": "https://github.com/igochkov"
+    "name": "Ivaylo Gochkov",
+    "url": "https://github.com/igochkov"
   },
   "icon": "images/icon.png",
   "engines": {
-      "vscode": "^1.75.1"
+    "vscode": "^1.75.1"
   },
   "license": "MIT",
   "categories": [
     "Programming Languages"
   ],
   "keywords": [
-      "mojo",
-      "Programming Language",
-      "AI",
-      "Python"
+    "mojo",
+    "Programming Language",
+    "AI",
+    "Python"
   ],
   "repository": {
-      "type": "git",
-      "url": "https://github.com/igochkov/vscode-mojo.git"
+    "type": "git",
+    "url": "https://github.com/igochkov/vscode-mojo.git"
   },
   "homepage": "https://github.com/igochkov/vscode-mojo",
   "bugs": {
-      "url": "https://github.com/igochkov/vscode-mojo/issues"
+    "url": "https://github.com/igochkov/vscode-mojo/issues"
   },
   "sponsor": {
-      "url": "https://github.com/sponsors/igochkov"
+    "url": "https://github.com/sponsors/igochkov"
   },
   "contributes": {
     "languages": [
@@ -59,5 +59,22 @@
         "path": "./syntaxes/MagicPython.tmLanguage.json"
       }
     ]
+  },
+  "dependencies": {
+    "@types/vscode": "^1.79.1",
+    "antlr4ts": "^0.5.0-alpha.4",
+    "assert": "^2.0.0",
+    "util": "^0.12.5"
+  },
+  "main": "./dist/extension.js",
+  "scripts": {
+    "vscode:prepublish": "npm run package",
+    "webpack": "webpack --mode development",
+    "package": "webpack --mode production --devtool hidden-nosources-source-map"
+  },
+  "devDependencies": {
+    "ts-loader": "^9.4.3",
+    "webpack": "^5.87.0",
+    "webpack-cli": "^5.1.4"
   }
 }

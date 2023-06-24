@@ -5,6 +5,8 @@ test-syntax/
 docs/
 src/
 out/
+tsconfig.json
+webpack.config.js
 syntaxes/mojo.tmLanguage.yaml
 syntaxes/MagicPython.tmLanguage.yaml
 CHANGELOG.md
