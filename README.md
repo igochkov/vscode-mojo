@@ -2,9 +2,11 @@
 
 A [Visual Studio Code](https://code.visualstudio.com/) extension with support for the [Mojo language](https://www.modular.com/mojo)!
 
+For updates and future improvements, see the [changelog](https://github.com/igochkov/vscode-mojo/blob/main/CHANGELOG.md).
+
 ## Features
 
-### [Declarative language features](https://code.visualstudio.com/api/language-extensions/overview#declarative-language-features)
+### Declarative language features
 
 - Syntax highlighting
 - Bracket matching
@@ -13,3 +15,15 @@ A [Visual Studio Code](https://code.visualstudio.com/) extension with support fo
 - Comment toggling
 - Auto indentation
 - Folding
+
+<!-- 
+### Programmatic language features
+
+- Hover information
+- Auto completion 
+- Jump to definition
+- Error checking
+- Formatting
+- Refactoring
+- Folding 
+-->
