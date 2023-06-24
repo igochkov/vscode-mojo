@@ -1,10 +1,10 @@
 .vscode
 .gitignore
 node_modules
-test/
+test-syntax/
 docs/
 src/
 out/
 syntaxes/mojo.tmLanguage.yaml
-syntaxes/MagicPython.tmLanguage.yml
+syntaxes/MagicPython.tmLanguage.yaml
 CHANGELOG.md
